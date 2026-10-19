@@ -1,0 +1,65 @@
+:root{
+    --color_crema: #efe6d8;
+    --color_crema_claro: #f7f1e7;
+    --color_cafe: #7a4a35;
+    --color_cafe_oscuro: #4a2c1f;
+    --fuente_titulos: 'Playfair Display', serif;
+    --fuente_cuerpo: 'Lato', sans-serif;
+}
+html{ scroll-behavior: smooth; scroll-padding-top: 80px; }
+body{ font-family: var(--fuente_cuerpo); color: var(--color_cafe_oscuro); background-color: var(--color_crema); }
+h1, h2, h3, .logo_bakery{ font-family: var(--fuente_titulos); font-weight: 800; }
+
+.bg_crema{ background-color: var(--color_crema); }
+.bg_crema_claro{ background-color: var(--color_crema_claro); }
+.texto_cafe{ color: var(--color_cafe); }
+.barra_superior{ background-color: var(--color_cafe_oscuro); color: var(--color_crema); }
+
+/* Menú */
+.logo_bakery{ color: var(--color_cafe_oscuro); letter-spacing: 2px; font-size: 1.6rem; }
+.navbar .nav-link{ color: var(--color_cafe_oscuro); font-weight: 700; }
+.navbar .nav-link:hover{ color: var(--color_cafe); }
+
+/* Botones */
+.btn_cafe{ background-color: var(--color_cafe); border-color: var(--color_cafe); color: #fff; font-weight: 700; }
+.btn_cafe:hover{ background-color: var(--color_cafe_oscuro); border-color: var(--color_cafe_oscuro); color: #fff; }
+.btn_cafe_borde{ border: 1px solid var(--color_cafe); color: var(--color_cafe); font-weight: 700; }
+.btn_cafe_borde:hover{ background-color: var(--color_cafe); color: #fff; }
+
+/* Encabezado */
+.hero_bakery{
+    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../images/principal.jpg") center / cover no-repeat;
+    min-height: 75vh;
+    padding: 60px 0;
+}
+.caja_hero{ max-width: 620px; background-color: rgba(247, 241, 231, 0.92); border-radius: 8px; }
+
+/* Tarjetas y galería */
+.card{ transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.card:hover{ transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important; }
+.card-img-top{ aspect-ratio: 4 / 3; object-fit: cover; }
+.galeria img{ width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 0.4s ease; }
+.galeria img:hover{ transform: scale(1.04); }
+
+/* Acordeón */
+.accordion-button:not(.collapsed){ background-color: var(--color_crema); color: var(--color_cafe_oscuro); }
+.accordion-button:focus{ box-shadow: 0 0 0 0.2rem rgba(122, 74, 53, 0.25); }
+
+/* Pie de página */
+.pie_bakery{ background-color: var(--color_cafe_oscuro); color: var(--color_crema); }
+.pie_bakery .logo_bakery{ color: var(--color_crema); }
+.redes a{ color: var(--color_crema); transition: color 0.3s ease; }
+.redes a:hover{ color: #e0a96d; }
+
+/* Tableta */
+@media (max-width: 991.98px){
+    .hero_bakery{ min-height: 60vh; }
+    .caja_hero h1{ font-size: 2.2rem; }
+}
+/* Móvil */
+@media (max-width: 575.98px){
+    html{ scroll-padding-top: 70px; }
+    .hero_bakery{ min-height: 50vh; padding: 40px 0; }
+    .caja_hero h1{ font-size: 1.7rem; }
+    h2{ font-size: 1.6rem; }
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <title>Panaderia y Pasteleria</title>
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <div class="barra_superior d-none d-md-block py-1 small">
+        <div class="container d-flex justify-content-between">
+            <span><i class="bi bi-clock"></i> Lun - Sáb 7:00 a 20:00</span>
+            <span><i class="bi bi-telephone"></i> 477 000 0000 &nbsp; <i class="bi bi-envelope"></i> hola@bakery.com</span>
+        </div>
+    </div>
+
+    <!-- MENÚ -->
+    <nav class="navbar navbar-expand-lg bg_crema sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand logo_bakery" href="#inicio">BAKERY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#promociones">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="#catalogo" class="btn btn_cafe rounded-pill px-4">Ordenar ahora</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ENCABEZADO -->
+    <header id="inicio" class="hero_bakery d-flex align-items-center">
+        <div class="container">
+            <div class="caja_hero mx-auto text-center p-4 p-md-5">
+                <p class="text-uppercase small mb-2 texto_cafe">Panadería artesanal</p>
+                <h1 class="display-5">Recién horneado, solo para ti</h1>
+                <p class="mb-4">Pan, pasteles y postres hechos cada mañana con ingredientes naturales y mucho cariño.</p>
+                <a href="#catalogo" class="btn btn_cafe rounded-pill px-4">Ordenar ahora</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PROMOCIONES -->
+        <section id="promociones" class="py-5 bg_crema_claro">
+            <div class="container">
+                <h2 class="text-center mb-2">¿Por qué elegirnos?</h2>
+                <p class="text-center text-muted mb-5">Calidad, sabor y promociones para ti todas las semanas.</p>
+                <div class="row g-4">
+            <div class="col-md-4">
+                <article class="card h-100 border-0 shadow-sm bg_crema_claro">
+                    <img src="images/artesanales.jpg" class="card-img-top" alt="Panes artesanales">
+                    <div class="card-body d-flex flex-column text-center">
+                        <span class="badge text-bg-warning align-self-center mb-2">2x1 los martes</span>
+                        <h3 class="h4">Panes artesanales</h3>
+                        <p class="text-muted">Masa madre y horneado diario con ingredientes naturales.</p>
+                        <a href="#catalogo" class="btn btn_cafe rounded-pill mt-auto">Visitar panadería</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="card h-100 border-0 shadow-sm bg_crema_claro">
+                    <img src="images/dulces.jpg" class="card-img-top" alt="Pasteles dulces">
+                    <div class="card-body d-flex flex-column text-center">
+                        <span class="badge text-bg-warning align-self-center mb-2">Nuevo</span>
+                        <h3 class="h4">Pasteles dulces</h3>
+                        <p class="text-muted">Croissants, donas y rollos de canela recién salidos del horno.</p>
+                        <a href="#catalogo" class="btn btn_cafe rounded-pill mt-auto">Visitar panadería</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="card h-100 border-0 shadow-sm bg_crema_claro">
+                    <img src="images/pasteles.jpg" class="card-img-top" alt="Pasteles a medida">
+                    <div class="card-body d-flex flex-column text-center">
+                        <span class="badge text-bg-warning align-self-center mb-2">10% en pedidos</span>
+                        <h3 class="h4">Pasteles a medida</h3>
+                        <p class="text-muted">Diseñamos tu pastel para cumpleaños, bodas y eventos.</p>
+                        <a href="#catalogo" class="btn btn_cafe rounded-pill mt-auto">Visitar panadería</a>
+                    </div>
+                </article>
+            </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISÍTANOS -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <h2>Visítanos hoy</h2>
+                        <p class="text-muted">Ven a probar nuestro pan recién salido del horno y llévate a casa el postre perfecto. Te esperamos con café, aroma a mantequilla y buena compañía.</p>
+                        <a href="#contacto" class="btn btn_cafe rounded-pill px-4">Cómo llegar</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-7"><img src="images/interior.jpg" class="img-fluid rounded" alt="Nuestra panadería"></div>
+                            <div class="col-sm-5 d-none d-sm-block"><img src="images/exterior.jpg" class="img-fluid rounded h-100 object-fit-cover" alt="Postres de la casa"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="py-5 bg_crema_claro">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestra galería</h2>
+                <div class="row g-3 galeria">
+            <div class="col-6 col-md-4"><img src="images/galeria1.jpg" class="img-fluid rounded" alt="Foto de la galería 1"></div>
+            <div class="col-6 col-md-4"><img src="images/galeria2.jpg" class="img-fluid rounded" alt="Foto de la galería 2"></div>
+            <div class="col-6 col-md-4"><img src="images/galeria3.jpg" class="img-fluid rounded" alt="Foto de la galería 3"></div>
+            <div class="col-6 col-md-4"><img src="images/galeria4.jpg" class="img-fluid rounded" alt="Foto de la galería 4"></div>
+            <div class="col-6 col-md-4"><img src="images/galeria5.jpg" class="img-fluid rounded" alt="Foto de la galería 5"></div>
+            <div class="col-6 col-md-4"><img src="images/galeria6.jpg" class="img-fluid rounded" alt="Foto de la galería 6"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATÁLOGO -->
+        <section id="catalogo" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-2">Catálogo</h2>
+                <p class="text-center text-muted mb-5">Elige tu favorito y pulsa "Ver detalles".</p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4">
+            <div class="col">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/artesanales.jpg" class="card-img-top" alt="Pan de masa madre">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Pan de masa madre</h3>
+                        <p class="small text-muted">Hogaza de fermentación lenta, corteza crujiente.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$65 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Pan de masa madre" data-desc="Hogaza de fermentación lenta, corteza crujiente." data-precio="$65 MXN" data-img="images/prod1.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod2.jpg" class="card-img-top" alt="Baguette clásica">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Baguette clásica</h3>
+                        <p class="small text-muted">Crujiente por fuera y suave por dentro.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$38 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Baguette clásica" data-desc="Crujiente por fuera y suave por dentro." data-precio="$38 MXN" data-img="images/prod2.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod3.jpg" class="card-img-top" alt="Croissant de mantequilla">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Croissant de mantequilla</h3>
+                        <p class="small text-muted">Hojaldre dorado con mantequilla real.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$35 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Croissant de mantequilla" data-desc="Hojaldre dorado con mantequilla real." data-precio="$35 MXN" data-img="images/prod3.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod4.jpg" class="card-img-top" alt="Concha de vainilla">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Concha de vainilla</h3>
+                        <p class="small text-muted">El pan dulce tradicional, recién horneado.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$18 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Concha de vainilla" data-desc="El pan dulce tradicional, recién horneado." data-precio="$18 MXN" data-img="images/prod4.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod5.jpg" class="card-img-top" alt="Rol de canela">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Rol de canela</h3>
+                        <p class="small text-muted">Con glaseado de queso crema.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$42 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Rol de canela" data-desc="Con glaseado de queso crema." data-precio="$42 MXN" data-img="images/prod5.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod6.jpg" class="card-img-top" alt="Dona glaseada">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Dona glaseada</h3>
+                        <p class="small text-muted">Esponjosa, con glaseado de azúcar.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$28 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Dona glaseada" data-desc="Esponjosa, con glaseado de azúcar." data-precio="$28 MXN" data-img="images/prod6.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col d-none d-md-block">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod7.jpg" class="card-img-top" alt="Cupcake de frambuesa">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Cupcake de frambuesa</h3>
+                        <p class="small text-muted">Betún cremoso y frambuesa natural.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$45 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Cupcake de frambuesa" data-desc="Betún cremoso y frambuesa natural." data-precio="$45 MXN" data-img="images/prod7.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col d-none d-md-block">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod8.jpg" class="card-img-top" alt="Pastel de chocolate">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Pastel de chocolate</h3>
+                        <p class="small text-muted">Rebanada de chocolate semiamargo.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$75 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Pastel de chocolate" data-desc="Rebanada de chocolate semiamargo." data-precio="$75 MXN" data-img="images/prod8.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col d-none d-md-block">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod9.jpg" class="card-img-top" alt="Pay de limón">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Pay de limón</h3>
+                        <p class="small text-muted">Base de galleta y merengue ligero.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$60 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Pay de limón" data-desc="Base de galleta y merengue ligero." data-precio="$60 MXN" data-img="images/prod9.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col d-none d-md-block">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="images/prod10.jpg" class="card-img-top" alt="Galletas con chispas">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h3 class="h5">Galletas con chispas</h3>
+                        <p class="small text-muted">Bolsa con 6 galletas de chocolate.</p>
+                        <p class="fw-bold texto_cafe fs-5 mt-auto">$50 MXN</p>
+                        <button type="button" class="btn btn-sm btn_cafe_borde w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-nombre="Galletas con chispas" data-desc="Bolsa con 6 galletas de chocolate." data-precio="$50 MXN" data-img="images/prod10.jpg">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+                </div>
+                <p class="d-md-none text-center small text-muted mt-4">En móvil mostramos los 6 más populares. Ábrenos en tableta o computadora para ver los 10.</p>
+            </div>
+        </section>
+
+        <!-- PREGUNTAS FRECUENTES (componente: Accordion) -->
+        <section id="preguntas" class="py-5 bg_crema_claro">
+            <div class="container">
+                <h2 class="text-center mb-5">Preguntas frecuentes</h2>
+                <div class="accordion mx-auto" id="preguntas_acordeon" style="max-width: 720px;">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq0" aria-expanded="true" aria-controls="faq0">¿Hacen pedidos para eventos?</button>
+                    </h3>
+                    <div id="faq0" class="accordion-collapse collapse show" data-bs-parent="#preguntas_acordeon">
+                        <div class="accordion-body">Sí, con 48 horas de anticipación. Escríbenos por WhatsApp o visítanos.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">¿Tienen opciones sin azúcar o sin gluten?</button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#preguntas_acordeon">
+                        <div class="accordion-body">Tenemos algunas opciones; pregunta en mostrador por el menú del día.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">¿Hacen entregas a domicilio?</button>
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#preguntas_acordeon">
+                        <div class="accordion-body">Entregamos en zonas cercanas a la panadería con un costo de envío bajo.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">¿Cuál es el horario?</button>
+                    </h3>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#preguntas_acordeon">
+                        <div class="accordion-body">Abrimos de lunes a sábado de 7:00 a 20:00 y domingos de 8:00 a 15:00.</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL (componente: Modal) -->
+    <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-4" id="modalTitulo"></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImg" src="" class="img-fluid rounded mb-3" alt="">
+                    <p id="modalDesc"></p>
+                    <p class="fw-bold fs-5 texto_cafe" id="modalPrecio"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="#contacto" class="btn btn_cafe" data-bs-dismiss="modal">Pedir ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto" class="pie_bakery pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <p class="logo_bakery fs-3 mb-2">BAKERY</p>
+                    <p class="small">Panadería y pastelería artesanal. Hecho con ingredientes naturales todos los días.</p>
+                    <div class="redes d-flex gap-3 fs-4">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3 class="h6 text-uppercase">Horario</h3>
+                    <p class="small mb-1">Lunes a sábado: 7:00 - 20:00</p>
+                    <p class="small">Domingo: 8:00 - 15:00</p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3 class="h6 text-uppercase">Contacto</h3>
+                    <p class="small mb-1"><i class="bi bi-geo-alt"></i> Calle Principal 123, Centro</p>
+                    <p class="small mb-1"><i class="bi bi-telephone"></i> 477 000 0000</p>
+                    <p class="small"><i class="bi bi-envelope"></i> hola@bakery.com</p>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <p class="text-center small mb-0">&copy; 2026 Bakery. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        // Modal: llena el contenido según el producto que se pulsó
+        const modalProducto = document.getElementById('modalProducto');
+        modalProducto.addEventListener('show.bs.modal', function (evento) {
+            const boton = evento.relatedTarget;
+            if (!boton) return;
+            document.getElementById('modalTitulo').textContent = boton.getAttribute('data-nombre');
+            document.getElementById('modalDesc').textContent = boton.getAttribute('data-desc');
+            document.getElementById('modalPrecio').textContent = boton.getAttribute('data-precio');
+            const img = document.getElementById('modalImg');
+            img.src = boton.getAttribute('data-img');
+            img.alt = boton.getAttribute('data-nombre');
+        });
+    </script>
+
+    
+</body>
+</html>
